@@ -1,0 +1,213 @@
+[
+  {
+    "ContainingType": "CognifyzDatabaseIntegrationAndUserAuthentication.Controllers.StudentController",
+    "Method": "GetStudentList",
+    "RelativePath": "api/Student/all-student",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CognifyzDatabaseIntegrationAndUserAuthentication.Dto.StudentDto, CognifyzDatabaseIntegrationAndUserAuthentication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CognifyzDatabaseIntegrationAndUserAuthentication.Controllers.StudentController",
+    "Method": "CreateStudent",
+    "RelativePath": "api/Student/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CognifyzDatabaseIntegrationAndUserAuthentication.Dto.StudentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CognifyzDatabaseIntegrationAndUserAuthentication.Models.ResponseModel\u00601[[CognifyzDatabaseIntegrationAndUserAuthentication.Dto.StudentDto, CognifyzDatabaseIntegrationAndUserAuthentication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CognifyzDatabaseIntegrationAndUserAuthentication.Controllers.StudentController",
+    "Method": "DeleteStudent",
+    "RelativePath": "api/Student/delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CognifyzDatabaseIntegrationAndUserAuthentication.Models.ResponseModel\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CognifyzDatabaseIntegrationAndUserAuthentication.Controllers.StudentController",
+    "Method": "GetStudentDetail",
+    "RelativePath": "api/Student/details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CognifyzDatabaseIntegrationAndUserAuthentication.Dto.StudentDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CognifyzDatabaseIntegrationAndUserAuthentication.Controllers.StudentController",
+    "Method": "EditStudent",
+    "RelativePath": "api/Student/edit-student",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "editStudent",
+        "Type": "CognifyzDatabaseIntegrationAndUserAuthentication.Dto.StudentDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CognifyzDatabaseIntegrationAndUserAuthentication.Models.ResponseModel\u00601[[CognifyzDatabaseIntegrationAndUserAuthentication.Dto.StudentDto, CognifyzDatabaseIntegrationAndUserAuthentication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CognifyzDatabaseIntegrationAndUserAuthentication.Controllers.UserController",
+    "Method": "GetUserDetail",
+    "RelativePath": "api/User/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CognifyzDatabaseIntegrationAndUserAuthentication.Dto.UserDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CognifyzDatabaseIntegrationAndUserAuthentication.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/User/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CognifyzDatabaseIntegrationAndUserAuthentication.Dto.UserDto, CognifyzDatabaseIntegrationAndUserAuthentication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CognifyzDatabaseIntegrationAndUserAuthentication.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "CognifyzDatabaseIntegrationAndUserAuthentication.Models.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CognifyzDatabaseIntegrationAndUserAuthentication.Models.Status",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CognifyzDatabaseIntegrationAndUserAuthentication.Controllers.UserController",
+    "Method": "Logout",
+    "RelativePath": "api/User/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

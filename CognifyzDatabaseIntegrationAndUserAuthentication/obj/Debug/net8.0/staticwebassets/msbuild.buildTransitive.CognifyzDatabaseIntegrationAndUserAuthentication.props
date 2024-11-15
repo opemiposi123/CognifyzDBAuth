@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CognifyzDatabaseIntegrationAndUserAuthentication.props" />
+</Project>
